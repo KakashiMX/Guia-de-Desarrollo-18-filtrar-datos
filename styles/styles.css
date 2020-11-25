@@ -1,0 +1,151 @@
+body{
+    background-color: #f3f3f3;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title{
+    text-align: center;
+}
+
+/*  Contenedor de la barra */
+.table-search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5px;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 245px;
+    margin-left: auto;
+}
+
+/* Barra de búsqueda */
+.search-input{
+    padding: .4rem;
+    border-radius: 5px;
+    border: none;
+    width: 84%;
+    outline: none;
+}
+
+/* Icono de buscar */
+.search-icon{
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    padding: .4rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* 
+Para hacer una tabla totalmente responsive se tiene que meter toda la tabla en un contenedor y darle un overflow-x
+*/
+.table-container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+}
+
+/* 
+table-layout: Define como se comportan las dimensiones de una tabla y los anchos de las columnas  
+    automatic: Valor por defecto
+    fixed: Necesita un width declarado, si no se le da un ancho a cada columna, se distribuye equitativamente
+*/
+
+.table{
+    table-layout: fixed;
+    width: 1000px;
+    text-align: center;
+}
+
+
+/* 
+border-spacing: Controla el espacio entre las celdas
+    recibe una medida en cualquier unidad y se le tiene que asignar a la tabla
+*/
+
+.table{
+    border-spacing: 5px;
+}
+
+/* Cabecera de la tabla */
+.head_row{
+    background-color: #007bfe;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Fila de la tabla */
+.table_row{
+    transition: background-color .5s ease, color .5s ease;
+}
+
+/* Filas impares */
+.table_row:nth-child(odd){
+    background-color: #d6d8d9;
+}
+
+/* Celda de la fila */
+.body_row{
+    padding: 10px;
+}
+
+/* Acciones de eliminar y actualizar */
+.actions{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/*  Estilos de cada botón */
+.action{
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Botón actualizar */
+.action-update{
+    background-color: #ffc107;
+    color: #fff;
+}
+
+/* Botón eliminar */
+.action-delete{
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* 
+empty-cells: Controla qué hacer con las celdad vacías
+    show: Valor por defecto
+    hide: Oculta las celdas - funciona sólo con el border-collapse: separate;
+    se le aplica a la tabla o al cuerpo
+*/
+
+.body_row{
+    empty-cells: show;
+}
+
+/* Media queries */
+@media screen and (min-width: 1024px){
+    .table_row:hover{
+        background-color: #007bfe;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .action-update:hover{
+        background-color: #ffd043;
+        color: #fff;
+    }
+    
+    .action-delete:hover{
+        background-color: #d35460;
+        color: #fff;
+    }
+}
+
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtrar datos</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    
+    <h1 class="title">Filtrar Datos</h1>
+    <!-- Contenedor de la tabla -->
+    <div class="table-container">
+
+        <!-- Barra de búsqueda -->
+        <div class="table-search">
+            <i class="fas fa-search search-icon"></i>
+            <input 
+                type="text" 
+                class="search-input"
+                id="search-input"
+                placeholder="Ingresa un término"
+            />
+        </div>
+        <!-- Tabla -->
+        <table class="table" id="table">
+            
+            <!-- Cabecera de la tabla -->
+            <thead>
+                <th class="head_row">Nombre</th>
+                <th class="head_row">Puesto</th>
+                <th class="head_row">Estatus</th>
+                <th class="head_row">Acciones</th>
+            </thead>
+
+            <!--  Cuerpo -->
+            <tbody>
+                <!-- Fila -->
+                <tr class="table_row">
+                    <!-- Celda de cada fila -->
+                    <td class="body_row">Maria Gomez Diaz</td>
+                    <td class="body_row">Jefa de proyectos</td>
+                    <td class="body_row">Activa</td>
+                    <td class="body_row actions">
+                        <button class=" action action-update">
+                            <i class="fas fa-user-edit actions-update"></i>
+                            Actualizar
+                        </button>
+                        <button class="action action-delete">
+                            <i class="fas fa-user-times actions-delete"></i>
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+
+                <!-- Fila -->
+                <tr class="table_row">
+                    <!-- Celda de cada fila -->
+                    <td class="body_row">Marcos Perez Ariza</td>
+                    <td class="body_row">Jefe de area</td>
+                    <td class="body_row">Activo</td>
+                    <td class="body_row actions">
+                        <button class=" action action-update">
+                            <i class="fas fa-user-edit actions-update"></i>
+                            Actualizar
+                        </button>
+                        <button class="action action-delete">
+                            <i class="fas fa-user-times actions-delete"></i>
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+
+                <!-- Fila -->
+                <tr class="table_row">
+                    <!-- Celda de cada fila -->
+                    <td class="body_row">Sandra Luna Mora</td>
+                    <td class="body_row">Asistente</td>
+                    <td class="body_row">Inactiva</td>
+                    <td class="body_row actions">
+                        <button class=" action action-update">
+                            <i class="fas fa-user-edit actions-update"></i>
+                            Actualizar
+                        </button>
+                        <button class="action action-delete">
+                            <i class="fas fa-user-times actions-delete"></i>
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+
+                <!-- Fila -->
+                <tr class="table_row">
+                    <!-- Celda de cada fila -->
+                    <td class="body_row">Mario Sevilla Montes</td>
+                    <td class="body_row">Limpieza</td>
+                    <td class="body_row">Activo</td>
+                    <td class="body_row actions">
+                        <button class=" action action-update">
+                            <i class="fas fa-user-edit actions-update"></i>
+                            Actualizar
+                        </button>
+                        <button class="action action-delete">
+                            <i class="fas fa-user-times actions-delete"></i>
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+
+                <!-- Fila -->
+                <tr class="table_row">
+                    <!-- Celda de cada fila -->
+                    <td class="body_row">Lourdes Duran Duran</td>
+                    <td class="body_row">Area de ventas</td>
+                    <td class="body_row">Inactiva</td>
+                    <td class="body_row actions">
+                        <button class=" action action-update">
+                            <i class="fas fa-user-edit actions-update"></i>
+                            Actualizar
+                        </button>
+                        <button class="action action-delete">
+                            <i class="fas fa-user-times actions-delete"></i>
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+
+                <!-- Fila -->
+                <tr class="table_row">
+                    <!-- Celda de cada fila -->
+                    <td class="body_row">Luis Romero Flores</td>
+                    <td class="body_row">Contador</td>
+                    <td class="body_row">Activo</td>
+                    <td class="body_row actions">
+                        <button class=" action action-update">
+                            <i class="fas fa-user-edit actions-update"></i>
+                            Actualizar
+                        </button>
+                        <button class="action action-delete">
+                            <i class="fas fa-user-times actions-delete"></i>
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+
+                <!-- Fila -->
+                <tr class="table_row">
+                    <!-- Celda de cada fila -->
+                    <td class="body_row">Edith Rios Cabrera</td>
+                    <td class="body_row">Vicepresidenta</td>
+                    <td class="body_row">Activa</td>
+                    <td class="body_row actions">
+                        <button class=" action action-update">
+                            <i class="fas fa-user-edit actions-update"></i>
+                            Actualizar
+                        </button>
+                        <button class="action action-delete">
+                            <i class="fas fa-user-times actions-delete"></i>
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
